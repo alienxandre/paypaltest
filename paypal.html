@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+</head>
+<body>
+    <h1>Carrinho</h1>
+
+    <!-- Informações do Produto -->
+    <div>
+        <h2>Produto</h2>
+        <p>Name: Produto 1</p>
+        <p>Codigo: 123456</p>
+        <p>Preço: R$10,00</p>
+    </div>
+
+    <!-- Formulário do Cliente -->
+    <div>
+        <h2>Cadastro do Cliente</h2>
+        <form id="buyerForm">
+            <label for="firstName">Nome:</label>
+            <input type="text" id="firstName" name="firstName" required><br>
+
+            
+
+            <button type="button" onclick="initiatePayPal()">Pay with PayPal</button>
+        </form>
+    </div>
+<div id="paypal-button-container"></div>
+    <!-- PayPal SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AeNJpU7yAlrTs6iocfNzfHCOTP6Gnn6Mps_RI8POJObOCjQvz7aHYkfRG4eJixv-Tnsq3Qw4xhinJS_M"></script>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
